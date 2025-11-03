@@ -4,330 +4,260 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>The Premium Edit</title>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
 
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="bg-gray-50 font-serif">
 
-  <body class="bg-gray-50">
-    <header class="flex justify-between items-center px-6 md:px-20 py-5 relative">
-      <div>
-        <img src="https://premium.capitalmind.in/wp-content/uploads/2019/05/premium@2x-min.png" alt="error" width="80">
+  <!-- HEADER -->
+  <header class="flex justify-between items-center px-6 md:px-20 py-5 relative">
+    <div class="flex gap-4 items-center ">
+      <img src="logo 2.png" alt="logo" width="60">
+      <div class="flex flex-col">
+        <span class=" text-xl font-semibold text-red-500">
+          Mangalam Moments
+        </span>
+        <span>
+
+          Forever Promise
+        </span>
       </div>
-
-
-      <button id="mobile-menubtn" class="md:hidden focus:outline-none text-2xl">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-
-      <nav>
-        <ul class="flex gap-8 hidden md:flex items-center">
-          <li><a href="#" class="hover:text-gray-200">Home</a></li>
-          <li><a href="#" class="hover:text-gray-200">About</a></li>
-          <li><a href="#" class="hover:text-gray-200">Services</a></li>
-          <li><a href="#" class="hover:text-gray-200">Venue</a></li>
-          <li><a href="#" class="hover:text-gray-200">Gallery</a></li>
-          <li><a href="#" class="hover:text-gray-200">Blogs</a></li>
-          <li><a href="#" class="hover:text-gray-200">Contact Us</a></li>
-        </ul>
-      </nav>
-
-
-      <ul id="mobile-menu"
-        class="hidden absolute top-full left-0 w-full bg-white text-gray-800 shadow-lg rounded-b-lg flex-col items-start space-y-2 py-4 px-6 md:hidden transition-all duration-300">
-        <li><a href="#" class="hover:text-gray-200">Home</a></li>
-        <li><a href="#" class="hover:text-gray-200">About</a></li>
-        <li><a href="#" class="hover:text-gray-200">Services</a></li>
-        <li><a href="#" class="hover:text-gray-200">Venue</a></li>
-        <li><a href="#" class="hover:text-gray-200">Gallery</a></li>
-        <li><a href="#" class="hover:text-gray-200">Blogs</a></li>
-        <li><a href="#" class="hover:text-gray-200">Contact Us</a></li>
-      </ul>
-    </header>
-
-    <script>
-      const mobilemenubtn = document.getElementById('mobile-menubtn');
-      const mobilemenu = document.getElementById('mobile-menu');
-
-      mobilemenubtn.addEventListener('click', () => {
-        mobilemenu.classList.toggle('hidden');
-      });
-    </script>
-
-    <!-- -----------Hero Page------------- -->
-
-    <section>
-      <div class="main flex flex-col justify-center">
-        <div class="text-2xl" data-aos="fade-up" data-aos-duration="2500">
-          THE PREMIUM EDIT #1 EXCLUSIVE EVENT COMPANY
-        </div>
-        <div class="text-5xl" data-aos="fade-up" data-aos-duration="1500">
-          Your <br> Forever Promises Begins Here
-        </div>
-        <div class="flex gap-5">
-          <button
-            class="flex flex-cols mt-6 px-5 py-3 rounded-full text-white font-semibold bg-violet-400 hover:scale-105">Contact
-            Us</button>
-
-          <div class="mt-8">
-            <span class="text-yellow-500 flex flex-cols">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </span>
-            <span class="text-black">4.8/5 Rating</span>
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-    <!-- -----------Representation Page------------- -->
-
-    <section class="flex justify-around bg-gray-200">
-      <div class="pt-9">
-        <img
-          src="https://images.unsplash.com/photo-1505944357431-27579db47558?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1173"
-          alt="" width="300" class="img1 rounded" >
-        <img
-          src="https://images.unsplash.com/photo-1714004941173-0054629146c2?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
-          alt="" width="300" class="img2 rounded">
-        <img
-          src="https://media.istockphoto.com/id/880347062/photo/holiday-excitement-serving-concept-there-are-untouched-white-dishes-clear-wineglasses.webp?a=1&b=1&s=612x612&w=0&k=20&c=HB6Q5EsUcmIf5Y9I2DLaMO3tJZRsbKSK0CGCEvy_myo="
-          alt="" width="300" class="img3 rounded">
-        <img
-          src="https://images.unsplash.com/photo-1635996145160-54e6bb3c8341?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1171"
-          alt="" width="300" class="img4 rounded">
-      </div>
-
-
-      <div class="w-1/2 pt-9">
-        <div class="space text-4xl ">where Your Dreams <br> Takes Flight
-        </div>
-        <div class="pt-5 font-sans text-lg">
-
-          At Wedding Destinations India, we specialize in transforming your wedding dreams into reality by curating the
-          perfect destination wedding in India experience. With years of expertise in planning and executing weddings in
-          the most stunning locations around the world.
-
-
-          Our team of dedicated wedding consultants works closely with you to understand your vision, preferences, and
-          desires. Whether it’s a serene beach ceremony, a romantic castle wedding, or an exotic cultural experience, we
-          provide the best destination wedding places in India to match your dream wedding.
-        </div>
-
-        <div class="mt-8 text-xl hover:text-yellow-300">
-          - know More
-        </div>
-      </div>
-    </section>
-
-    <!-- -----------venue Page--------------->
-
-    <section>
-
-      <div class="text-4xl flex justify-center mt-4">
-        Wedding Destinations
-      </div>
-      <div class="flex gap-6 justify-center pt-5">
-        <div>
-          <img
-            src="https://plus.unsplash.com/premium_photo-1664304458186-9a67c1330d02?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=690"
-            alt="" width="300" class="object-cover">
-        </div>
-
-        <div>
-          <img
-            src="https://images.unsplash.com/photo-1627370778723-4d26700cd972?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687"
-            alt="" width="300">
-        </div>
-
-        <div>
-          <img
-            src="https://images.unsplash.com/photo-1657894736581-ccc35d62d9e2?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687"
-            alt="" width="300">
-        </div>
-
-        <div>
-          <img
-            src="https://images.unsplash.com/photo-1552098933-a5ceb0e5dd91?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGthc2htaXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600"
-            alt="" width="300">
-        </div>
-      </div>
-    </section>
-
-    <section>
-
-      <div class="text-4xl flex justify-center mt-4">
-        Hotels In India
-      </div>
-      <div class="flex gap-6 justify-center pt-5">
-        <div>
-          <img
-            src="https://images.unsplash.com/photo-1701421016474-09b19faa9f77?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687"
-            alt="" width="300">
-        </div>
-
-        <div>
-          <img
-            src="https://images.unsplash.com/photo-1744307679052-f7abacb463ed?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687"
-            alt="" width="300">
-        </div>
-
-        <div>
-          <img
-            src="https://plus.unsplash.com/premium_photo-1697729622923-920b4f4f8d2a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687"
-            alt="" width="300">
-        </div>
-
-        <div>
-          <img
-            src="https://images.unsplash.com/photo-1568308546121-ca2afe8ef14c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687"
-            alt="" width="300">
-        </div>
-      </div>
-    </section>
-
-
-    <!-- -----------Blog Page------------- -->
-
-    <section>
-      <div class="text-4xl flex justify-center m-5">
-        Blogs
-      </div>
-      <div class="flex justify-center gap-6 mb-4">
-        <div class="bg-gray-200 w-1/5 rounded-lg">
-          <img src="https://destinationweddingsindia.com/wp-content/uploads/2025/10/destination-wedding-goa.png" alt=""
-            class="object-cover rounded-t-lg">
-          <div class="text-lg p-4">
-            Complete Guide To Destination <br> Wedding Venues, Cost & <br>
-            Tips
-            <div class="mt-3">
-              <button>Read More <i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="bg-gray-200 w-1/5 rounded-lg">
-          <img src="https://destinationweddingsindia.com/wp-content/uploads/2025/10/Vivah-Muhurat-2025%E2%80%932026.jpg"
-            alt="" class="object-cover rounded-t-lg">
-          <div class="text-lg p-4">
-            Vivah Muhurat: Auspicious <br> Hindu Marriage Dates & Wedding <br>
-            Checklist
-            <div class="mt-3">
-              <button>Read More <i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="bg-gray-200 w-1/5 rounded-lg">
-          <img src="https://destinationweddingsindia.com/wp-content/uploads/2025/10/Top-Wedding-Destinations.jpg" alt=""
-            class="object-cover rounded-t-lg">
-          <div class="text-lg p-4">
-            India's Most Beautiful Wedding Destination Places
-            <div class="mt-3">
-              <button>Read More <i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="bg-gray-200 w-1/5 rounded-lg">
-          <img src="https://destinationweddingsindia.com/wp-content/uploads/2025/07/UdaipurWeddings.webp" alt=""
-            class="object-cover rounded-t-lg">
-          <div class="text-lg p-4">
-            10 Most Exoctic Udaipur Wedding <br>
-            Venues & Resort
-            <div class="mt-3">
-              <button>Read More <i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="flex justify-center text-lg">
-        <button class="border-yellow-500 border-4 px-4 py-2 rounded-full m-4">View All</button>
-      </div>
-    </section>
-
-    <!-- -----------Services Page------------- -->
-
-    <section class="bg-pink-50">
-    <div class="container mx-auto  py-10 max-w-4xl text-center">
-
-      <h1 class="text-xl md:text-2xl font-bold">
-        OUR SERVICES
-      </h1>
-
-      <h2 class="text-3xl md:text-4xl font-semibold mt-4 mb-8 ">
-        Services by <span class="font-bold">Premium®</span> Event <br> Management
-      </h2>
-
-      <div class="text-left text-lg text-gray-700 leading-relaxed space-y-4 px-4 sm:px-8">
-        <p>
-          Premium® Event Management is an ISO 9001:2015
-            certified event management company providing services exclusively throughout the entire state of
-          India. We offer excellent, comprehensive event management services, including venue  booking and selection assistance, personal event planning, corporate events and conferences, private  parties, trade exhibitions, virtual event management services, destination weddings, and
-          entertaining stage shows all over India. <br> Feel free to contact us.
-        </p>
-      </div>
-</div>
-  </section>
-
-
-    <!-- -----------Contact Page------------- -->
-
-    <section class="footer flex justify-around items-center text-white">
-      <div class="text- w-1/2">
-        <div class="text-6xl">
-          Looking for the Most Creative & Innovative <br> Event Planners
-        </div>
-        <div class="my-3 text-xl font-sans">
-          Imagine celebrating the most special events of your life without worrying about a single thing. Premium Events
-          is here to make your dream events come true! Our expert event management team offers professional event
-          planning and management services in cities, villages and from south to north, using creative and innovative
-          methods to plan and curate perfect, hassle-free celebrations that will captivate your attendees. Contact us
-          today to bring your vision to life and create unforgettable memories!
-        </div>
-      </div>
-
-      <div class="text-black">
-        <div class="my-3">
-          <input type="text" placeholder="Enter Your Name" class="px-4 rounded">
-        </div>
-        <div class="my-3">
-          <input type="text" placeholder="Enter Your Mobile Number" class="px-4 rounded">
-        </div>
-        <div class="my-3">
-          <input type="text" placeholder="Enter Your E-mail" class="px-4 rounded">
-        </div>
-        <div class="my-3">
-          <textarea cols="50" rows="10" class="px-4 rounded" placeholder="Message"></textarea>
-        </div>
-      </div>
-    </section>
-
-    <div class="flex justify-center items-center my-9">
-      © 2025 Developed by <span>Aditya kumar & Vaibhav Singh</span>
     </div>
 
+    <!-- Mobile Menu Button -->
+    <button id="mobile-menubtn" class="md:hidden focus:outline-none text-2xl">
+      <i class="fa-solid fa-bars"></i>
+    </button>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+    <!-- Desktop Menu -->
+    <nav>
+      <ul class="hidden md:flex gap-8 items-center">
+        <li><a href="#" class="hover:text-violet-400">Home</a></li>
+        <li><a href="#" class="hover:text-violet-400">About</a></li>
+        <li><a href="#" class="hover:text-violet-400">Services</a></li>
+        <li><a href="#" class="hover:text-violet-400">Venue</a></li>
+        <li><a href="#" class="hover:text-violet-400">Gallery</a></li>
+        <li><a href="#" class="hover:text-violet-400">Blogs</a></li>
+        <li><a href="#" class="hover:text-violet-400">Contact Us</a></li>
+      </ul>
+    </nav>
 
-  </body>
+    <!-- Mobile Menu -->
+    <ul id="mobile-menu"
+      class="hidden absolute top-full left-0 w-full bg-white text-gray-800 shadow-lg rounded-b-lg flex-col items-start space-y-2 py-4 px-6 md:hidden transition-all duration-300">
+      <li><a href="#" class="hover:text-violet-400">Home</a></li>
+      <li><a href="#" class="hover:text-violet-400">About</a></li>
+      <li><a href="#" class="hover:text-violet-400">Services</a></li>
+      <li><a href="#" class="hover:text-violet-400">Venue</a></li>
+      <li><a href="#" class="hover:text-violet-400">Gallery</a></li>
+      <li><a href="#" class="hover:text-violet-400">Blogs</a></li>
+      <li><a href="#" class="hover:text-violet-400">Contact Us</a></li>
+    </ul>
+  </header>
+
+  <script>
+    const mobilemenubtn = document.getElementById('mobile-menubtn');
+    const mobilemenu = document.getElementById('mobile-menu');
+    mobilemenubtn.addEventListener('click', () => {
+      mobilemenu.classList.toggle('hidden');
+    });
+  </script>
+
+  <!-- HERO SECTION -->
+  <section class="relative bg-cover bg-center text-white px-6 md:px-32 py-20 flex flex-col justify-center"
+    style="background-image: linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)), url('https://larisaresort.com/assets/images/blogposts/destination_wedding_shimla.webp')">
+    <h2 class="text-xl md:text-2xl mb-3 font-light tracking-wide" data-aos="fade-up" data-aos-duration="2500">
+      THE PREMIUM EDIT #1 EXCLUSIVE EVENT COMPANY
+    </h2>
+    <h1 class="text-4xl md:text-6xl font-bold mb-5 leading-tight" data-aos="fade-up" data-aos-duration="1500">
+      Your <br> Forever Promises Begins Here
+    </h1>
+    <div class="flex flex-col sm:flex-row gap-5 items-start sm:items-center">
+      <button class="bg-violet-500 hover:bg-violet-600 text-white font-semibold px-6 py-3 rounded-full transition">
+        Contact Us
+      </button>
+
+      <div class="flex items-center gap-2 mt-3 sm:mt-0">
+        <div class="text-yellow-400 flex">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <span class="text-sm bg-white text-black rounded px-2 py-1">4.8/5 Rating</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- REPRESENTATION -->
+  <section class="flex flex-col lg:flex-row justify-around bg-gray-200 px-6 lg:px-20 py-10 gap-10">
+    <!-- Image stack -->
+    <div class="relative w-full lg:w-1/2 h-[28rem] flex justify-center items-center">
+      <img src="https://images.unsplash.com/photo-1505944357431-27579db47558?auto=format&fit=crop&q=80&w=600"
+        class="absolute w-44 sm:w-60 rounded-lg shadow-lg z-10 top-10 left-5 transform " alt="">
+      <img src="https://images.unsplash.com/photo-1714004941173-0054629146c2?auto=format&fit=crop&q=80&w=600"
+        class="absolute w-48 sm:w-64 rounded-lg shadow-lg z-20 bottom-12 left-1/2 transform -translate-x-1/2 border-2 border-yellow-100"
+        alt="">
+      <img
+        src="https://media.istockphoto.com/id/880347062/photo/holiday-excitement-serving-concept-there-are-untouched-white-dishes-clear-wineglasses.webp?a=1&b=1&s=612x612&w=0&k=20&c=HB6Q5EsUcmIf5Y9I2DLaMO3tJZRsbKSK0CGCEvy_myo="
+        class="absolute w-40 sm:w-56 rounded-lg shadow-lg z-30 top-1/2 right-80 transform -translate-y-1/2 border-2 border-white"
+        alt="">
+      <img src="https://images.unsplash.com/photo-1635996145160-54e6bb3c8341?auto=format&fit=crop&q=80&w=600"
+        class="absolute w-44 sm:w-60 rounded-lg shadow-lg z-0 top-20 right-1/4 border-2 border-white opacity-80 mb-9"
+        alt="">
+    </div>
+
+    <div class="lg:w-1/2 space-y-5 text-center lg:text-left">
+      <h2 class="text-3xl font-bold">Where Your Dreams <br> Take Flight</h2>
+      <p class="text-gray-700 leading-relaxed">
+        At Wedding Destinations India, we specialize in transforming your wedding dreams into reality by curating the
+        perfect destination wedding in India experience. With years of expertise in planning and executing weddings in
+        the most stunning locations around the world.
+      </p>
+      <p class="text-gray-700 leading-relaxed">
+        Our team of dedicated wedding consultants works closely with you to understand your vision, preferences, and
+        desires. Whether it’s a serene beach ceremony or a romantic castle wedding, we help make it happen.
+      </p>
+      <div class="text-xl text-yellow-500 cursor-pointer hover:text-yellow-400">
+        - Know More
+      </div>
+    </div>
+  </section>
+
+  <!-- DESTINATIONS -->
+  <section class="text-center my-10">
+    <h2 class="text-3xl font-bold mb-5">Wedding Destinations</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center px-4">
+      <img src="https://plus.unsplash.com/premium_photo-1664304458186-9a67c1330d02?auto=format&fit=crop&q=80&w=600"
+        class="w-full rounded" alt="">
+      <img src="https://images.unsplash.com/photo-1627370778723-4d26700cd972?auto=format&fit=crop&q=80&w=600"
+        class="w-full rounded" alt="">
+      <img src="https://images.unsplash.com/photo-1657894736581-ccc35d62d9e2?auto=format&fit=crop&q=80&w=600"
+        class="w-full rounded" alt="">
+      <img src="https://images.unsplash.com/photo-1552098933-a5ceb0e5dd91?auto=format&fit=crop&q=80&w=600"
+        class="w-full rounded" alt="">
+    </div>
+  </section>
+
+  <!-- HOTELS -->
+  <section class="text-center my-10">
+    <h2 class="text-3xl font-bold mb-5">Hotels In India</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center px-4">
+      <img src="https://images.unsplash.com/photo-1701421016474-09b19faa9f77?auto=format&fit=crop&q=80&w=600"
+        class="w-full rounded" alt="">
+      <img src="https://images.unsplash.com/photo-1744307679052-f7abacb463ed?auto=format&fit=crop&q=80&w=600"
+        class="w-full rounded" alt="">
+      <img src="https://plus.unsplash.com/premium_photo-1697729622923-920b4f4f8d2a?auto=format&fit=crop&q=80&w=600"
+        class="w-full rounded" alt="">
+      <img src="https://images.unsplash.com/photo-1568308546121-ca2afe8ef14c?auto=format&fit=crop&q=80&w=600"
+        class="w-full rounded" alt="">
+    </div>
+  </section>
+
+  <!-- BLOGS -->
+  <section class="text-center my-10">
+    <h2 class="text-3xl font-bold mb-5">Blogs</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
+      <div class="bg-gray-200 rounded-lg overflow-hidden">
+        <img src="https://destinationweddingsindia.com/wp-content/uploads/2025/10/destination-wedding-goa.png"
+          class="w-full object-cover" alt="">
+        <div class="p-4 text-lg">
+          Complete Guide To Destination Wedding Venues, Cost & Tips
+          <div class="mt-3">
+            <button class="hover:text-yellow-500">Read More <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="bg-gray-200 rounded-lg overflow-hidden">
+        <img src="https://destinationweddingsindia.com/wp-content/uploads/2025/10/Vivah-Muhurat-2025%E2%80%932026.jpg"
+          class="w-full object-cover" alt="">
+        <div class="p-4 text-lg">
+          Vivah Muhurat: Auspicious Hindu Marriage Dates & Wedding Checklist
+          <div class="mt-3">
+            <button class="hover:text-yellow-500">Read More <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="bg-gray-200 rounded-lg overflow-hidden">
+        <img src="https://destinationweddingsindia.com/wp-content/uploads/2025/10/Top-Wedding-Destinations.jpg"
+          class="w-full object-cover" alt="">
+        <div class="p-4 text-lg">
+          India's Most Beautiful Wedding Destination Places
+          <div class="mt-3">
+            <button class="hover:text-yellow-500">Read More <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="bg-gray-200 rounded-lg overflow-hidden">
+        <img src="https://destinationweddingsindia.com/wp-content/uploads/2025/07/UdaipurWeddings.webp"
+          class="w-full object-cover" alt="">
+        <div class="p-4 text-lg">
+          10 Most Exotic Udaipur Wedding Venues & Resorts
+          <div class="mt-3">
+            <button class="hover:text-yellow-500">Read More <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      class="mt-6 border-4 border-yellow-500 px-6 py-2 rounded-full hover:bg-yellow-500 hover:text-white transition">
+      View All
+    </button>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="bg-pink-50 py-10 text-center">
+    <h2 class="text-2xl font-bold">OUR SERVICES</h2>
+    <h3 class="text-3xl md:text-4xl font-semibold mt-4 mb-8">
+      Services by <span class="font-bold">Premium®</span> Event Management
+    </h3>
+    <div class="max-w-3xl mx-auto px-4 text-gray-700 text-lg leading-relaxed">
+      Premium® Event Management is an ISO 9001:2015 certified company providing event management services across India.
+      We
+      offer venue booking, personal and corporate event planning, trade exhibitions, destination weddings, and more.
+    </div>
+  </section>
+
+  <!-- CONTACT / FOOTER -->
+  <section
+    class="bg-cover bg-center text-white px-6 md:px-20 py-12 flex flex-col lg:flex-row justify-around items-center gap-10"
+    style="background-image: url('https://parkerlighting.com/wp-content/uploads/2019/11/Vintage-String-Lights-5-27-5.jpg')">
+    <div class="lg:w-1/2 space-y-4">
+      <h2 class="text-4xl md:text-5xl font-bold leading-tight">Looking for the Most Creative & Innovative Event Planners
+      </h2>
+      <p class="text-lg">
+        Imagine celebrating the most special events of your life without worrying about a single thing. Premium Events
+        is
+        here to make your dream events come true! Contact us today to create unforgettable memories.
+      </p>
+    </div>
+    <div class="bg-white text-black p-6 rounded-lg w-full lg:w-1/3">
+      <input type="text" placeholder="Enter Your Name" class="w-full mb-3 p-2 border rounded">
+      <input type="text" placeholder="Enter Your Mobile Number" class="w-full mb-3 p-2 border rounded">
+      <input type="email" placeholder="Enter Your E-mail" class="w-full mb-3 p-2 border rounded">
+      <textarea rows="4" placeholder="Message" class="w-full mb-3 p-2 border rounded"></textarea>
+      <button class="bg-violet-500 text-white px-4 py-2 rounded-full w-full hover:bg-violet-600">Submit</button>
+    </div>
+  </section>
+
+  <footer class="text-center py-6 text-gray-700">
+    © 2025 Developed by <span class="font-semibold">Aditya Kumar & Vaibhav Singh</span>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+
+</body>
 
 </html>
