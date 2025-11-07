@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Wedding Venues</title>
+
+    <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+     <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50 font-serif">
+
+  <!-- HEADER -->
+  <header class="flex justify-between items-center px-6 md:px-20 py-5 relative">
+    <div class="flex gap-4 items-center ">
+      <img src="logo 2.png" alt="logo" width="60">
+      <div class="flex flex-col">
+        <span class=" text-xl font-semibold text-red-500">
+          Mangalam Moments
+        </span>
+        <span>
+
+          Forever Promise
+        </span>
+      </div>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button id="mobile-menubtn" class="md:hidden focus:outline-none text-2xl">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <!-- Desktop Menu -->
+    <nav>
+      <ul class="hidden md:flex gap-8 items-center">
+        <li><a href="#" class="hover:text-violet-400">Home</a></li>
+        <li><a href="#" class="hover:text-violet-400">About</a></li>
+        <li><a href="#" class="hover:text-violet-400">Services</a></li>
+        <li><a href="#" class="hover:text-violet-400">Venue</a></li>
+        <li><a href="#" class="hover:text-violet-400">Gallery</a></li>
+        <li><a href="#" class="hover:text-violet-400">Blogs</a></li>
+        <li><a href="#" class="hover:text-violet-400">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <ul id="mobile-menu"
+      class="hidden absolute top-full left-0 w-full bg-white text-gray-800 shadow-lg rounded-b-lg flex-col items-start space-y-2 py-4 px-6 md:hidden transition-all duration-300">
+      <li><a href="#" class="hover:text-violet-400">Home</a></li>
+      <li><a href="#" class="hover:text-violet-400">About</a></li>
+      <li><a href="#" class="hover:text-violet-400">Services</a></li>
+      <li><a href="#" class="hover:text-violet-400">Venue</a></li>
+      <li><a href="#" class="hover:text-violet-400">Gallery</a></li>
+      <li><a href="#" class="hover:text-violet-400">Blogs</a></li>
+      <li><a href="#" class="hover:text-violet-400">Contact Us</a></li>
+    </ul>
+  </header>
+
+  <script>
+    const mobilemenubtn = document.getElementById('mobile-menubtn');
+    const mobilemenu = document.getElementById('mobile-menu');
+    mobilemenubtn.addEventListener('click', () => {
+      mobilemenu.classList.toggle('hidden');
+    });
+  </script>
+
+   <section class="relative bg-cover bg-center text-white px-6 md:px-32 py-20 flex flex-col justify-center"
+    style="background-image: linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)), url('https://images.unsplash.com/photo-1745573673416-66e829644ae9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1334')">
+    
+    <h1 class="text-4xl md:text-6xl font-bold mb-5 leading-tight" data-aos="fade-up" data-aos-duration="2500">
+      BEST EVENT & WEDDING <br> VENUES IN INDIA
+    </h1>
+    <h4 class="font-sans w-1/2">
+        Looking for a perfect venue in India? Our updated list features the most stunning locations and venue types, from backwater and beach resorts to banquet halls and traditional local mandapas. Find your dream event venue in India today! 
+    </h4>
+    <div class="flex flex-col sm:flex-row gap-5 items-start sm:items-center my-5">
+      <button class="bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 rounded-full transition border border-white">
+       <i class="fa-brands fa-whatsapp"></i>Whatsup Us
+      </button>
+    </div>
+    </section>
+
+
+      <!-- catogries Page  -->
+
+      <div class="flex bg-yellow-500 justify-center my-6 py-4 gap-4">
+
+        <span class="flex items-center text-xl">Venue List</span>
+        <div>
+        <select class="px-2 py-3 rounded-xl">
+          <option value="Select Venue Location"> Select Venue Location</option>
+          <option value="Select Venue Location"> Mumbai</option>
+          <option value="Select Venue Location"> GOA</option>
+          <option value="Select Venue Location"> Delhi</option>
+          <option value="Select Venue Location"> Kashmir</option>
+          <option value="Select Venue Location"> Shimla</option>
+          <option value="Select Venue Location"> Darjeeling</option>
+        </select>
+        </div>
+
+        <div>
+        <select class="px-2 py-3 rounded-xl">
+          <option value="Select Venue Location"> Select Venue Location</option>
+          <option value="Select Venue Location"> Mumbai</option>
+          <option value="Select Venue Location"> GOA</option>
+          <option value="Select Venue Location"> Delhi</option>
+          <option value="Select Venue Location"> Kashmir</option>
+          <option value="Select Venue Location"> Shimla</option>
+          <option value="Select Venue Location"> Darjeeling</option>
+        </select>
+        </div>
+
+        <input type="text" placeholder="Search Venue/ Location" class="px-2 rounded-xl">
+      </div>
+
+      <!-- Location Page  -->
+       <section>
+        <div class="flex justify-center gap-5">
+
+      <div class="bg-white-200 rounded-lg overflow-hidden w-1/4 mb-6 shadow-lg hover:shadow-2xl">
+        <img src="https://destinationweddingsindia.com/wp-content/uploads/2025/10/destination-wedding-goa.png"
+          class="w-full object-cover hover:scale-105 transation-all duration-300" alt="">
+        <div class="p-4">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <p>
+            Kino Cottage
+          </p>
+          <i class="fa-solid fa-location-dot"></i>Mumbai
+          <div class="mt-3 flex gap-3">
+            <button class="bg-yellow-200 px-4 py-2 text-sm rounded-full hover:bg-yellow-300 transation">Price Enquriy</button>
+            <button class="bg-green-200 px-4 py-2 text-sm rounded-full hover:bg-green-300 transation">Whatsup Us</button>
+          </div>
+        </div>
+      </div>
+
+       <div class="bg-white-200 rounded-lg overflow-hidden w-1/4 mb-6 shadow-lg hover:shadow-xl">
+        <img src="https://images.unsplash.com/photo-1728365743796-ee69341a166d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
+          class="w-full object-cover hover:scale-105 transation-all duration-300" alt="">
+        <div class="p-4">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <p>
+            Hotel HillTop Courtyard
+          </p>
+          <i class="fa-solid fa-location-dot"></i>Shimla
+          <div class="mt-3 flex gap-3">
+            <button class="bg-yellow-200 px-4 py-2 text-sm rounded-full hover:bg-yellow-300 transation">Price Enquriy</button>
+            <button class="bg-green-200 px-4 py-2 text-sm rounded-full hover:bg-green-300 transation">Whatsup Us</button>
+          </div>
+        </div>
+      </div>
+
+       <div class="bg-white-200 rounded-lg overflow-hidden w-1/4 mb-6 shadow-lg hover:shadow-xl">
+        <img src="https://images.unsplash.com/photo-1651478880955-38850da0870d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170 "
+          class="w-full object-cover hover:scale-105 transation-all duration-300" alt="">
+        <div class="p-4">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <p>
+            Hotel Kashmir Inn
+          </p>
+          <i class="fa-solid fa-location-dot"></i>Kashmir
+          <div class="mt-3 flex gap-3">
+            <button class="bg-yellow-200 px-4 py-2 text-sm rounded-full hover:bg-yellow-300 transation">Price Enquriy</button>
+            <button class="bg-green-200 px-4 py-2 text-sm rounded-full hover:bg-green-300 transation">Whatsup Us</button>
+          </div>
+        </div>
+      </div>
+        </div>
+
+       </section>
+
+       <section>
+        <div class="flex justify-center gap-5">
+
+        <div class="bg-white-200 rounded-lg overflow-hidden w-1/4 mb-6 shadow-lg">
+        <img src="https://plus.unsplash.com/premium_photo-1697730350129-de0e9f2b1e82?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070"
+          class="w-full object-cover hover:scale-105 transation-all duration-300" alt="">
+        <div class="p-4">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <p>
+            Tripoo Potala Place
+          </p>
+          <i class="fa-solid fa-location-dot"></i> Darjeeling
+          <div class="mt-3 flex gap-3">
+            <button class="bg-yellow-200 px-4 py-2 text-sm rounded-full hover:bg-yellow-300 transation">Price Enquriy</button>
+            <button class="bg-green-200 px-4 py-2 text-sm rounded-full hover:bg-green-300 transation">Whatsup Us</button>
+          </div>
+        </div>
+      </div>
+
+       <div class="bg-white-200 rounded-lg overflow-hidden w-1/4 mb-6 shadow-lg">
+        <img src="https://images.unsplash.com/photo-1744307679140-f4abf4a9bd01?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1173"
+          class="w-full object-cover hover:scale-105 transation-all duration-300" alt="">
+        <div class="p-4">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <p>
+            Falcon Resorts
+          </p>
+          <i class="fa-solid fa-location-dot"></i>GOA
+          <div class="mt-3 flex gap-3">
+            <button class="bg-yellow-200 px-4 py-2 text-sm rounded-full hover:bg-yellow-300 transation">Price Enquriy</button>
+            <button class="bg-green-200 px-4 py-2 text-sm rounded-full hover:bg-green-300 transation">Whatsup Us</button>
+          </div>
+        </div>
+      </div>
+
+       <div class="bg-white-200 rounded-lg overflow-hidden w-1/4 mb-6 shadow-lg">
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/1c/61/1e/48/facade.jpg"
+          class="w-full object-cover hover:scale-105 transation-all duration-300" alt="">
+        <div class="p-4">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <p>
+            Pride Plaza Hotel
+          </p>
+          <i class="fa-solid fa-location-dot"></i>New Delhi
+          <div class="mt-3 flex gap-3">
+            <button class="bg-yellow-200 px-4 py-2 text-sm rounded-full hover:bg-yellow-300 transation">Price Enquriy</button>
+            <button class="bg-green-200 px-4 py-2 text-sm rounded-full hover:bg-green-300 transation">Whatsup Us</button>
+          </div>
+        </div>
+      </div>
+
+        </div>
+       </section>
+
+
+       <section>
+        <div class="flex justify-center gap-5">
+
+        <div class="bg-white-200 rounded-lg overflow-hidden w-1/4 mb-6 shadow-lg">
+        <img src="https://www.theraviz.com/wp-content/uploads/2024/04/Why-Kerala-Has-the-Most-Number-of-5-Star-Hotels-in-Kerala.jpg"
+          class="w-full object-cover hover:scale-105 transation-all duration-300" alt="">
+        <div class="p-4">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <p>
+           Emarald Resorts
+          </p>
+          <i class="fa-solid fa-location-dot"></i> Kerala
+          <div class="mt-3 flex gap-3">
+            <button class="bg-yellow-200 px-4 py-2 text-sm rounded-full hover:bg-yellow-300 transation">Price Enquriy</button>
+            <button class="bg-green-200 px-4 py-2 text-sm rounded-full hover:bg-green-300 transation">Whatsup Us</button>
+          </div>
+        </div>
+      </div>
+
+       <div class="bg-white-200 rounded-lg overflow-hidden w-1/4 mb-6 shadow-lg">
+        <img src="https://media.cntraveler.com/photos/5c06e5a701ffc86b13da2528/16:9/w_2560,c_limit/The-Oberoi-Udaivilas,-Udaipur__2018_Premier-Lake-View-Rooms-with-Semi-Private-Pools---The-Oberoi-Udaivilas,-Udaipur-01.jpg"
+          class="w-full object-cover hover:scale-105 transation-all duration-300" alt="">
+        <div class="p-4">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <p>
+            Radisson Blu Palace
+          </p>
+          <i class="fa-solid fa-location-dot"></i>Udaipur
+          <div class="mt-3 flex gap-3">
+            <button class="bg-yellow-200 px-4 py-2 text-sm rounded-full hover:bg-yellow-300 transation">Price Enquriy</button>
+            <button class="bg-green-200 px-4 py-2 text-sm rounded-full hover:bg-green-300 transation">Whatsup Us</button>
+          </div>
+        </div>
+      </div>
+
+       <div class="bg-white-200 rounded-lg overflow-hidden w-1/4 mb-6 shadow-lg">
+        <img src="https://www.weddingsbyneerajkamra.com/uploads/blog/Document/umaid-bhawan-palace-jodhpur-weddings/umaid-bhawan-jodhpur-wedding-cost.jpg"
+          class="w-full object-cover hover:scale-105 transation-all duration-300" alt="">
+        <div class="p-4">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <p>
+            Amaritara Manak Haveli
+          </p>
+          <i class="fa-solid fa-location-dot"></i>Jodhpur 
+          <div class="mt-3 flex gap-3">
+            <button class="bg-yellow-200 px-4 py-2 text-sm rounded-full hover:bg-yellow-300 transation">Price Enquriy</button>
+            <button class="bg-green-200 px-4 py-2 text-sm rounded-full hover:bg-green-300 transation">Whatsup Us</button>
+          </div>
+        </div>
+      </div>
+        </div>
+
+        <div class="flex justify-center my-6">
+          <button class="border-4 border-yellow-500 px-6 py-2 rounded-full hover:bg-yellow-500 hover:text-white transition">Load More</button>
+        </div>
+
+       </section>
+
+       <!-- content page  -->
+
+       <section class="grid justify-center">
+        <h1 class="font-bold text-2xl my-3">Why Choose Mangalam Event Management for Booking Your Event Venue in India?</h1>
+
+        <div class="font-sans">
+          Choosing the perfect event and wedding venue in India is important for a memorable celebration. Mangalam Event Management professionals simplify the process with expert venue <br> booking services in India, offering exclusive access to India’s top event venues, from luxurious event venues to normal or budget-friendly venues.
+        </div>
+
+        <div class="font-bold text-2xl my-3">
+          <i class="fa-solid fa-trophy text-yellow-300"></i>Top Reasons to Choose Mangalam Event Management for Venue Booking Services
+        </div>
+
+        <ul class="font-sans leading-releaxed">
+          <li>Exclusive Access to Top Event Venues in India</li>
+          <li>Customized Selection for Your Dream Event and Wedding Venues in India</li>
+          <li> Hassle-Free Booking services & Negotiation</li>
+          <li> All-inclusive wedding Venue Services & Wedding Packages</li>
+          <li> Expert Wedding Planning services</li>
+          <li> Exclusive Discounts: Get Better Rates on Event & Wedding Venues in Kerala Compared to Direct Booking.</li>
+        </ul>
+       </section>
+
+       <footer class="text-center py-6 text-gray-700">
+    © 2025 Developed by <span class="font-semibold">Aditya Kumar & Vaibhav Singh</span>
+  </footer>
+
+       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+
+</body>
+</html>
